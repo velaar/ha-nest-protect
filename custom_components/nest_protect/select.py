@@ -21,7 +21,8 @@ class NestProtectSelectDescriptionMixin:
 
 @dataclass
 class NestProtectSelectDescription(
-    SelectEntityDescription, NestProtectSelectDescriptionMixin
+    NestProtectSelectDescriptionMixin,
+    SelectEntityDescription
 ):
     """Class to describe an Nest Protect sensor."""
 
